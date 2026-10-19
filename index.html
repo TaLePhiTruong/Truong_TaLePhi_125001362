@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MAISON ÉPOQUE — Thương hiệu thời trang Vintage kết hợp Classic Luxury và French Elegance. Khám phá các bộ sưu tập Haute Tailoring và phong thái Quiet Luxury vượt thời gian.">
+  <meta name="keywords" content="thời trang vintage, classic luxury, french vintage, quiet luxury, âu phục cổ điển, áo măng tô cashmere, maison epoque">
+  <meta name="author" content="MAISON ÉPOQUE">
+  <meta property="og:title" content="MAISON ÉPOQUE — Elegance Never Fades">
+  <meta property="og:description" content="Đỉnh cao phong cách thời trang Vintage & Classic Luxury Pháp. May đo di sản và vẻ đẹp trường tồn qua năm tháng.">
+  <meta property="og:type" content="website">
+  <title>MAISON ÉPOQUE | Elegance Never Fades — Thời Trang Vintage Cao Cấp</title>
+
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Animate.css CDN (Bắt buộc theo đề bài) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- AOS (Animate On Scroll) CSS CDN (Bắt buộc theo đề bài) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8UXYtCMfETBRGuh5Ch3Hg7395CzKh2D8x2472e39ec0NV05VYqqP4N2wrDB4l5PEF9mA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Dự phòng khi người dùng tắt JavaScript: hiển thị đầy đủ mọi phần tử có data-aos -->
+  <noscript>
+    <style>
+      [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hỗ trợ Accessibility: Bỏ qua điều hướng để đến nội dung chính -->
+  <a href="#main-content" class="skip-link">Chuyển trực tiếp đến nội dung chính</a>
+
+  <!-- 1. ANNOUNCEMENT BAR (Top Bar thông báo thương hiệu - sử dụng thẻ aside cho nội dung bổ trợ) -->
+  <aside class="announcement-bar" aria-label="Thông báo đặc biệt từ MAISON ÉPOQUE">
+    <div class="container announcement-container">
+      <p class="announcement-text">
+        <span class="announcement-tag">DÉFILÉ AUTOMNE-HIVER 2026</span>
+        <span class="announcement-sep" aria-hidden="true">•</span>
+        Trải nghiệm thử đồ may đo Bespoke tại Salon Hà Nội & TP. Hồ Chí Minh — <em>Giới hạn 15 khách/ngày</em>
+      </p>
+      <a href="#appointment" class="announcement-link">Đặt Lịch Hẹn Ngay <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </aside>
+
+  <!-- 2. SITE HEADER & NAVIGATION (Đúng chuẩn header & nav của trang) -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <!-- Nút mở menu trên Mobile (Hamburger) -->
+      <button type="button" class="mobile-toggle" id="mobileMenuBtn" aria-expanded="false" aria-controls="primaryNavigation" aria-label="Mở bảng điều hướng trên thiết bị di động">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Logo thương hiệu MAISON ÉPOQUE -->
+      <a href="#hero" class="brand-logo" aria-label="MAISON ÉPOQUE - Trang chủ">
+        <span class="logo-name">MAISON ÉPOQUE</span>
+        <span class="logo-sub">PARIS &bull; SAÏGON</span>
+      </a>
+
+      <!-- Primary Navigation với aria-label rõ ràng -->
+      <nav class="primary-nav" id="primaryNavigation" aria-label="Điều hướng chính của website">
+        <div class="mobile-nav-header">
+          <span class="mobile-nav-title">DANH MỤC THỜI TRANG</span>
+          <button type="button" class="mobile-close-btn" id="mobileCloseBtn" aria-label="Đóng bảng điều hướng">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Trang Chủ</a></li>
+          <li class="nav-item"><a href="#collections" class="nav-link">Bộ Sưu Tập</a></li>
+          <li class="nav-item"><a href="#products" class="nav-link">Sản Phẩm Tiêu Biểu</a></li>
+          <li class="nav-item"><a href="#story" class="nav-link">Câu Chuyện Di Sản</a></li>
+          <li class="nav-item"><a href="#philosophy" class="nav-link">Triết Lý Nghệ Thuật</a></li>
+          <li class="nav-item"><a href="#appointment" class="nav-link">Đặt Hẹn May Đo</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+          <p class="mobile-contact-note">Salon đón tiếp riêng: 09:30 - 21:00</p>
+          <a href="tel:02439886688" class="mobile-contact-phone">Hotline: (024) 3988 6688</a>
+        </div>
+      </nav>
+
+      <!-- Header Action CTA -->
+      <div class="header-actions">
+        <a href="#appointment" class="btn btn-outline-gold header-cta">Đặt Lịch Salon</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. MAIN CONTENT (Duy nhất một main cho toàn bộ nội dung chính của trang) -->
+  <main id="main-content">
+
+    <!-- 3.1 HERO SECTION (Heading cấp cao nhất H1 duy nhất của trang) -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge animate__animated animate__fadeInDown">
+            <span class="badge-line" aria-hidden="true"></span>
+            <span class="badge-text">ÉDITION INTEMPORELLE &bull; 2026</span>
+          </div>
+          <h1 id="hero-title" class="hero-title animate__animated animate__fadeInUp">
+            Elegance <br>
+            <span class="italic-serif">Never Fades</span>
+          </h1>
+          <p class="hero-desc animate__animated animate__fadeInUp animate__delay-1s">
+            Lấy cảm hứng từ thời kỳ hoàng kim của thời trang Pháp thập niên 1950, 
+            <strong>MAISON ÉPOQUE</strong> tái hiện chuẩn mực may đo Haute Tailoring kết hợp 
+            tinh thần <em>Quiet Luxury</em> — kiến tạo những giá trị trang nhã trường tồn cùng năm tháng.
+          </p>
+          <div class="hero-actions animate__animated animate__fadeInUp animate__delay-1s">
+            <a href="#collections" class="btn btn-burgundy">Khám Phá Bộ Sưu Tập</a>
+            <a href="#story" class="btn btn-link">
+              <span>Hành trình di sản</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+          <div class="hero-meta" data-aos="fade-up" data-aos-delay="200">
+            <div class="meta-item">
+              <span class="meta-num">100%</span>
+              <span class="meta-label">Len Cashmere &amp; Tơ Tằm Tự Nhiên</span>
+            </div>
+            <div class="meta-divider" aria-hidden="true"></div>
+            <div class="meta-item">
+              <span class="meta-num">48h+</span>
+              <span class="meta-label">Thủ Công Hoàn Thiện Từng Tuyệt Tác</span>
+            </div>
+            <div class="meta-divider" aria-hidden="true"></div>
+            <div class="meta-item">
+              <span class="meta-num">50</span>
+              <span class="meta-label">Bản Độc Bản Cho Mỗi Thiết Kế</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Semantic Figure & Figcaption cho hình ảnh đại diện của Hero -->
+        <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000">
+          <figure class="hero-image-frame">
+            <img 
+              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=80" 
+              alt="Người mẫu diện trang phục măng-tô len Cashmere và váy vintage cổ điển phong cách Pháp của MAISON ÉPOQUE" 
+              class="hero-img"
+              width="1000"
+              height="1250"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            >
+            <figcaption class="frame-tag" aria-hidden="true">
+              <span class="tag-title">LOOK N° 01</span>
+              <span class="tag-subtitle">L'Élégance Parisienne</span>
+            </figcaption>
+          </figure>
+          <aside class="hero-floating-card" data-aos="zoom-in" data-aos-delay="400" aria-label="Lời đề tặng nghệ thuật">
+            <p class="floating-quote">"Sự đơn giản là chìa khóa của mọi nét thanh lịch đích thực."</p>
+            <span class="floating-author">— Atelier Parisien</span>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.2 FEATURED COLLECTIONS SECTION (H2 cho section, H3 cho từng article con) -->
+    <section class="collections-section" id="collections" aria-labelledby="collections-title">
+      <div class="container">
+        <header class="section-header" data-aos="fade-up">
+          <p class="section-sub">CURATED EDITIONS</p>
+          <h2 id="collections-title" class="section-title">Bộ Sưu Tập Nổi Bật</h2>
+          <div class="title-ornament" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-symbol">&diams;</span>
+            <span class="ornament-line"></span>
+          </div>
+          <p class="section-intro">
+            Mỗi bộ sưu tập là một chương tiểu thuyết bằng chất liệu, kết hợp thẩm mỹ cổ điển quý phái với kỹ nghệ cắt dựng cấu trúc tân tiến.
+          </p>
+        </header>
+
+        <div class="collections-grid">
+          <!-- Collection Card 1: Article độc lập -->
+          <article class="collection-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="collection-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80" 
+                alt="Bộ sưu tập L'Automne Parisien với áo măng-tô Cashmere màu cát dạo bước bên đại lộ Saint-Germain"
+                class="collection-img"
+                width="800"
+                height="1000"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="collection-overlay">
+                <span class="collection-badge">AUTOMNE &bull; 2026</span>
+              </div>
+            </div>
+            <div class="collection-body">
+              <span class="collection-category">ẤN BẢN MÙA THU</span>
+              <h3 class="collection-name">L'Automne Parisien</h3>
+              <p class="collection-desc">
+                Cảm hứng từ những buổi chiều rảo bước bên đại lộ Saint-Germain. Phom dáng trench coat dáng dài, chất liệu len Tweed dệt tay và tone màu Sand - Espresso kinh điển.
+              </p>
+              <a href="#products" class="collection-action" data-filter="coats">
+                <span>Khám phá ấn bản</span>
+                <span class="action-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Collection Card 2: Article độc lập -->
+          <article class="collection-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="collection-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" 
+                alt="Bộ sưu tập Heritage Tailoring với âu phục may đo thủ công chuẩn mực Savile Row"
+                class="collection-img"
+                width="800"
+                height="1000"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="collection-overlay">
+                <span class="collection-badge">HAUTE TAILORING</span>
+              </div>
+            </div>
+            <div class="collection-body">
+              <span class="collection-category">ÂU PHỤC DI SẢN</span>
+              <h3 class="collection-name">Heritage Tailoring</h3>
+              <p class="collection-desc">
+                Đỉnh cao nghệ thuật may đo cổ điển với ve áo nhọn bản lớn, phom ngực xếp canvas tự nhiên từ lông ngựa và vải dệt Loro Piana nguyên bản vùng Piedmont.
+              </p>
+              <a href="#products" class="collection-action" data-filter="suits">
+                <span>Khám phá ấn bản</span>
+                <span class="action-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Collection Card 3: Article độc lập -->
+          <article class="collection-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="collection-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" 
+                alt="Bộ sưu tập Soirée & Velours với váy đầm dạ hội nhung đen tuyền sang trọng"
+                class="collection-img"
+                width="800"
+                height="1000"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="collection-overlay">
+                <span class="collection-badge">NOCTURNE COUTURE</span>
+              </div>
+            </div>
+            <div class="collection-body">
+              <span class="collection-category">DẠ TIỆC &amp; NHUNG LỤA</span>
+              <h3 class="collection-name">Soirée &amp; Velours</h3>
+              <p class="collection-desc">
+                Sức hút ma mị từ chất liệu nhung tuyết dệt tơ lụa Bảo Lộc và satin bóng mờ. Dành riêng cho những đêm tiệc thính phòng và dạ vũ vương giả.
+              </p>
+              <a href="#products" class="collection-action" data-filter="velvet">
+                <span>Khám phá ấn bản</span>
+                <span class="action-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.3 SIGNATURE PRODUCTS SECTION (H2 tiêu đề, H3 cho từng thẻ sản phẩm article) -->
+    <section class="products-section" id="products" aria-labelledby="products-title">
+      <div class="container">
+        <header class="section-header" data-aos="fade-up">
+          <p class="section-sub">ICONS OF MAISON</p>
+          <h2 id="products-title" class="section-title">Sản Phẩm Tiêu Biểu</h2>
+          <div class="title-ornament" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-symbol">&diams;</span>
+            <span class="ornament-line"></span>
+          </div>
+          <p class="section-intro">
+            Mỗi thiết kế đại diện cho triết lý thời trang phi thời gian, hoàn thiện thủ công với số lượng giới hạn.
+          </p>
+        </header>
+
+        <!-- Category Filters -->
+        <div class="product-filters" role="tablist" aria-label="Lọc danh mục sản phẩm thời trang" data-aos="fade-up">
+          <button type="button" class="filter-btn active" role="tab" aria-selected="true" data-category="all">Tất Cả Thiết Kế</button>
+          <button type="button" class="filter-btn" role="tab" aria-selected="false" data-category="coats">Áo Măng-tô &amp; Blazers</button>
+          <button type="button" class="filter-btn" role="tab" aria-selected="false" data-category="suits">Âu Phục May Đo</button>
+          <button type="button" class="filter-btn" role="tab" aria-selected="false" data-category="velvet">Lụa &amp; Nhung Dạ</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+
+          <!-- Product Item 1: Article độc lập -->
+          <article class="product-card" data-category="coats" data-aos="fade-up" data-aos-delay="100">
+            <div class="product-media">
+              <span class="product-tag">BESTSELLER</span>
+              <img 
+                src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80" 
+                alt="Áo măng-tô Cashmere cao cấp Le Marais màu dạ lạc đà với hàng khuy sừng chạm khắc thủ công"
+                class="product-img"
+                width="800"
+                height="1067"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="product-actions">
+                <button type="button" class="btn-quick-view" data-product-id="prod-1" aria-label="Xem chi tiết áo măng-tô Cashmere Le Marais">
+                  Xem Chi Tiết
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-category">ÁO MĂNG-TÔ</p>
+              <h3 class="product-title">Măng-tô Cashmere "Le Marais"</h3>
+              <p class="product-material">100% Cashmere Mông Cổ &bull; Khuy sừng chạm khắc</p>
+              <div class="product-footer">
+                <span class="product-price">18.500.000 ₫</span>
+                <button type="button" class="btn-product-order" data-product-id="prod-1" aria-label="Đặt lịch thử đồ áo măng-tô Le Marais">Thử Đồ</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Item 2: Article độc lập -->
+          <article class="product-card" data-category="coats" data-aos="fade-up" data-aos-delay="150">
+            <div class="product-media">
+              <span class="product-tag">HERITAGE</span>
+              <img 
+                src="https://images.unsplash.com/photo-1550614000-4895a10e1bfd?auto=format&fit=crop&w=800&q=80" 
+                alt="Áo blazer Tweed cổ điển Saint-Germain dệt tay màu cát sa mạc kết hợp nút đồng vintage"
+                class="product-img"
+                width="800"
+                height="1067"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="product-actions">
+                <button type="button" class="btn-quick-view" data-product-id="prod-2" aria-label="Xem chi tiết áo blazer Tweed Saint-Germain">
+                  Xem Chi Tiết
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-category">BLAZER TWEED</p>
+              <h3 class="product-title">Blazer Tweed "Saint-Germain"</h3>
+              <p class="product-material">Tweed len dệt tay &bull; Nút đồng vintage đúc nổi</p>
+              <div class="product-footer">
+                <span class="product-price">12.800.000 ₫</span>
+                <button type="button" class="btn-product-order" data-product-id="prod-2" aria-label="Đặt lịch thử đồ áo blazer Saint-Germain">Thử Đồ</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Item 3: Article độc lập -->
+          <article class="product-card" data-category="suits" data-aos="fade-up" data-aos-delay="200">
+            <div class="product-media">
+              <span class="product-tag">SIGNATURE</span>
+              <img 
+                src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80" 
+                alt="Bộ Âu phục 3 mảnh Le Gentilhomme may đo thủ công từ vải len Super 150s Loro Piana"
+                class="product-img"
+                width="800"
+                height="1067"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="product-actions">
+                <button type="button" class="btn-quick-view" data-product-id="prod-3" aria-label="Xem chi tiết âu phục 3 mảnh Le Gentilhomme">
+                  Xem Chi Tiết
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-category">BESPOKE SUIT</p>
+              <h3 class="product-title">Bộ Suit 3 Mảnh "Le Gentilhomme"</h3>
+              <p class="product-material">Len Super 150s &bull; Canvassing dựng ngực thủ công</p>
+              <div class="product-footer">
+                <span class="product-price">26.000.000 ₫</span>
+                <button type="button" class="btn-product-order" data-product-id="prod-3" aria-label="Đặt lịch thử đồ bộ suit Le Gentilhomme">Thử Đồ</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Item 4: Article độc lập -->
+          <article class="product-card" data-category="velvet" data-aos="fade-up" data-aos-delay="250">
+            <div class="product-media">
+              <span class="product-tag">COUTURE</span>
+              <img 
+                src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=800&q=80" 
+                alt="Đầm dạ hội nhung đen tuyền La Nuit Étoilée dệt tơ tằm xẻ lưng quý phái"
+                class="product-img"
+                width="800"
+                height="1067"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="product-actions">
+                <button type="button" class="btn-quick-view" data-product-id="prod-4" aria-label="Xem chi tiết đầm dạ hội nhung La Nuit Étoilée">
+                  Xem Chi Tiết
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-category">ĐẦM DẠ HỘI</p>
+              <h3 class="product-title">Đầm Dạ Hội Nhung "La Nuit Étoilée"</h3>
+              <p class="product-material">Nhung lụa dệt kim tuyến &bull; Cắt cúp tôn vóc dáng</p>
+              <div class="product-footer">
+                <span class="product-price">16.200.000 ₫</span>
+                <button type="button" class="btn-product-order" data-product-id="prod-4" aria-label="Đặt lịch thử đồ đầm dạ hội La Nuit Étoilée">Thử Đồ</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Item 5: Article độc lập -->
+          <article class="product-card" data-category="velvet" data-aos="fade-up" data-aos-delay="300">
+            <div class="product-media">
+              <span class="product-tag">POÉSIE</span>
+              <img 
+                src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80" 
+                alt="Áo sơ mi lụa tơ tằm cổ bèo dáng rũ Poète Romantique phối cúc xà cừ tự nhiên"
+                class="product-img"
+                width="800"
+                height="1067"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="product-actions">
+                <button type="button" class="btn-quick-view" data-product-id="prod-5" aria-label="Xem chi tiết áo sơ mi lụa rũ Poète Romantique">
+                  Xem Chi Tiết
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-category">SƠ MI LỤA TƠ TẰM</p>
+              <h3 class="product-title">Sơ Mi Lụa Rũ "Poète Romantique"</h3>
+              <p class="product-material">100% Tơ tằm dệt tay &bull; Cúc xà cừ đại dương</p>
+              <div class="product-footer">
+                <span class="product-price">6.900.000 ₫</span>
+                <button type="button" class="btn-product-order" data-product-id="prod-5" aria-label="Đặt lịch thử đồ áo sơ mi Poète Romantique">Thử Đồ</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Item 6: Article độc lập -->
+          <article class="product-card" data-category="coats" data-aos="fade-up" data-aos-delay="350">
+            <div class="product-media">
+              <span class="product-tag">VINTAGE ICON</span>
+              <img 
+                src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80" 
+                alt="Áo khoác măng-tô dạ nanh sói Houndstooth Vendôme phom dáng chữ A cổ điển thập niên 50"
+                class="product-img"
+                width="800"
+                height="1067"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="product-actions">
+                <button type="button" class="btn-quick-view" data-product-id="prod-6" aria-label="Xem chi tiết áo măng-tô dạ nanh sói Vendôme">
+                  Xem Chi Tiết
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-category">MĂNG-TÔ HOUNDSTOOTH</p>
+              <h3 class="product-title">Măng-tô Dạ Nanh Sói "Vendôme"</h3>
+              <p class="product-material">Len Merino dệt jacquard &bull; Lót lụa tơ thêu chỉ vàng</p>
+              <div class="product-footer">
+                <span class="product-price">19.800.000 ₫</span>
+                <button type="button" class="btn-product-order" data-product-id="prod-6" aria-label="Đặt lịch thử đồ áo măng-tô Vendôme">Thử Đồ</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="products-action-center" data-aos="fade-up">
+          <p class="catalog-note">Mỗi tác phẩm có thể được may đo cá nhân hóa (Made-to-Measure) theo số đo của quý khách.</p>
+          <a href="#appointment" class="btn btn-primary">Yêu Cầu May Đo Bespoke Riêng</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.4 BRAND STORY SECTION (H2 tiêu đề, H3 cho các khối trụ cột) -->
+    <section class="story-section" id="story" aria-labelledby="story-title">
+      <div class="container story-container">
+        <!-- Visual Column với Figure & Figcaption -->
+        <div class="story-visual" data-aos="fade-right">
+          <figure class="story-img-main-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=900&q=80" 
+              alt="Bàn tay nghệ nhân may đo lành nghề đang tỉ mỉ cắt dựng phom vải len thô tại xưởng may MAISON ÉPOQUE"
+              class="story-img-main"
+              width="900"
+              height="1125"
+              loading="lazy"
+              decoding="async"
+            >
+            <figcaption class="story-experience-badge">
+              <span class="exp-years">30+</span>
+              <span class="exp-label">Năm gìn giữ nghề may di sản</span>
+            </figcaption>
+          </figure>
+          <div class="story-img-accent-wrap" data-aos="fade-up" data-aos-delay="200">
+            <img 
+              src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=700&q=80" 
+              alt="Chi tiết cuộn vải len cao cấp và kéo cắt may cổ điển tại Atelier"
+              class="story-img-accent"
+              width="700"
+              height="700"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+        </div>
+
+        <!-- Story Content Column -->
+        <div class="story-content" data-aos="fade-left">
+          <p class="section-sub">L'HISTOIRE DE LA MAISON</p>
+          <h2 id="story-title" class="section-title text-left">
+            Hồn Cốt Cổ Điển Trong <br>
+            <span class="italic-serif">Kỷ Nguyên Mới</span>
+          </h2>
+          <div class="title-ornament ornament-left" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-symbol">&diams;</span>
+            <span class="ornament-line"></span>
+          </div>
+
+          <div class="story-text">
+            <p>
+              Khởi nguồn từ niềm say đắm vẻ đẹp bất biến của thời trang châu Âu thế kỷ 20, 
+              <strong>MAISON ÉPOQUE</strong> được xây dựng như một chốn tôn nghiêm dành cho những tâm hồn 
+              yêu quý vẻ đẹp thanh khiết của <em>French Vintage</em> và tinh thần <em>Classic Luxury</em>.
+            </p>
+            <p>
+              Chúng tôi khước từ sự xoay vần vội vã của xu hướng thời trang nhanh. Thay vào đó, mỗi chiếc áo 
+              tại Maison là kết tinh của hàng chục giờ miệt mài: từ việc tuyển lựa những thớ len lông cừu nguyên chất 
+              tại miền bắc nước Ý, đến kỹ nghệ dựng ngực canvas bằng lông đuôi ngựa truyền thống giúp chiếc áo 
+              ôm trọn dáng người mà vẫn mềm mại như hơi thở.
+            </p>
+            <p>
+              Tại Salon của MAISON ÉPOQUE, thời trang không chỉ là y phục khoác lên người. Đó là sự kế thừa văn hóa, 
+              sự tôn trọng đối với tay nghề người thợ may, và lời tuyên ngôn thầm lặng của một phong thái đĩnh đạc, 
+              khiêm nhường nhưng đầy quyền uy.
+            </p>
+          </div>
+
+          <!-- Story Pillars Grid: Sử dụng div cho các khối tính năng con -->
+          <div class="story-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">&sect;</div>
+              <h3 class="pillar-title">Vật Liệu Độc Bản</h3>
+              <p class="pillar-desc">Len Cashmere, Lụa Mulberry, và Nút sừng tự nhiên được tuyển chọn khắt khe từ các xưởng dệt hàng đầu châu Âu.</p>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">&infin;</div>
+              <h3 class="pillar-title">Độ Bền Vượt Thế Hệ</h3>
+              <p class="pillar-desc">Thiết kế cấu trúc có khả năng nới rộng hoặc thu gọn linh hoạt, đồng hành cùng chủ nhân qua nhiều thập kỷ.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.5 PHILOSOPHY BANNER SECTION (Bổ sung H2 chuẩn semantic kết hợp blockquote và cite) -->
+    <section class="philosophy-section" id="philosophy" aria-labelledby="philosophy-title">
+      <div class="philosophy-backdrop" aria-hidden="true"></div>
+      <div class="container philosophy-container" data-aos="zoom-in" data-aos-duration="900">
+        <!-- H2 ẩn cho Screen Reader nhằm bảo đảm cấu trúc cây phân cấp heading trọn vẹn -->
+        <h2 id="philosophy-title" class="sr-only">Triết Lý Nghệ Thuật &amp; Tuyên Ngôn Thẩm Mỹ</h2>
+        <span class="philosophy-tag" aria-hidden="true">LE MANIFESTE ÉPOQUE</span>
+        <blockquote class="philosophy-quote">
+          <p>&ldquo;Thời trang có thể biến đổi theo mùa, nhưng sự trang nhã đích thực sẽ luôn tồn tại vĩnh cửu cùng năm tháng.&rdquo;</p>
+        </blockquote>
+        <div class="philosophy-author">
+          <cite class="author-name">MAISON ÉPOQUE ATELIER</cite>
+          <span class="author-title">Triết lý thiết kế Quiet Luxury</span>
+        </div>
+        <div class="philosophy-values">
+          <div class="value-item">
+            <span class="val-num" aria-hidden="true">I</span>
+            <h3 class="val-title">Sự Tiết Chế</h3>
+            <p class="val-desc">Không logo phô trương, sự đắt giá toát ra từ chất vải và phom dáng.</p>
+          </div>
+          <div class="value-item">
+            <span class="val-num" aria-hidden="true">II</span>
+            <h3 class="val-title">Sự Chuẩn Xác</h3>
+            <p class="val-desc">Từng đường kim cắt may đạt độ sai số dưới 1mm theo chuẩn bespoke.</p>
+          </div>
+          <div class="value-item">
+            <span class="val-num" aria-hidden="true">III</span>
+            <h3 class="val-title">Sự Trường Tồn</h3>
+            <p class="val-desc">Một tác phẩm mặc lại sau 20 năm vẫn giữ vẹn nguyên vẻ đẹp đương thời.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.6 APPOINTMENT & SALON EXPERIENCE SECTION (H2 cho section, H3 cho salon và form) -->
+    <section class="appointment-section" id="appointment" aria-labelledby="appointment-title">
+      <div class="container">
+        <div class="appointment-card-wrapper" data-aos="fade-up">
+          <div class="appointment-info">
+            <p class="section-sub">PRIVATE SALON EXPERIENCE</p>
+            <h2 id="appointment-title" class="section-title text-left">
+              Đặt Lịch Thử Đồ &amp; May Đo Riêng
+            </h2>
+            <p class="appointment-desc">
+              Kính mời quý khách đặt lịch trước để tận hưởng không gian thử đồ riêng tư bên ly trà thảo mộc thơm lành và nhận tư vấn trực tiếp từ Stylist Trưởng của MAISON ÉPOQUE.
+            </p>
+
+            <div class="salon-locations">
+              <div class="salon-box">
+                <h3 class="salon-name">Salon Hà Nội</h3>
+                <p class="salon-address">Số 28 Phố Tràng Tiền, Quận Hoàn Kiếm, Hà Nội</p>
+                <p class="salon-time">Giờ đón tiếp: 09:30 &ndash; 21:00 hàng ngày</p>
+              </div>
+              <div class="salon-box">
+                <h3 class="salon-name">Salon TP. Hồ Chí Minh</h3>
+                <p class="salon-address">Số 14 Đại lộ Đồng Khởi, Quận 1, TP. Hồ Chí Minh</p>
+                <p class="salon-time">Giờ đón tiếp: 09:30 &ndash; 21:30 hàng ngày</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="appointment-form-wrap">
+            <form class="appointment-form" id="appointmentForm" novalidate aria-label="Biểu mẫu đặt hẹn trải nghiệm Salon VIP">
+              <h3 class="form-title">Thông Tin Đặt Hẹn VIP</h3>
+
+              <div class="form-group">
+                <label for="clientName" class="form-label">Họ và Tên của Quý khách <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="clientName" name="name" class="form-input" placeholder="Ví dụ: Nguyễn Minh Anh" required aria-required="true">
+                <span class="field-error" id="nameError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="clientPhone" class="form-label">Số điện thoại <span class="required" aria-hidden="true">*</span></label>
+                  <input type="tel" id="clientPhone" name="phone" class="form-input" placeholder="0901 234 567" required aria-required="true">
+                  <span class="field-error" id="phoneError" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="clientSalon" class="form-label">Địa điểm Salon <span class="required" aria-hidden="true">*</span></label>
+                  <select id="clientSalon" name="salon" class="form-select" required aria-required="true">
+                    <option value="">Chọn Salon tiếp đón</option>
+                    <option value="hanoi">Salon Tràng Tiền — Hà Nội</option>
+                    <option value="hcm">Salon Đồng Khởi — TP. HCM</option>
+                  </select>
+                  <span class="field-error" id="salonError" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="clientDate" class="form-label">Ngày mong muốn <span class="required" aria-hidden="true">*</span></label>
+                  <input type="date" id="clientDate" name="date" class="form-input" required aria-required="true">
+                  <span class="field-error" id="dateError" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="clientService" class="form-label">Dịch vụ quan tâm</label>
+                  <select id="clientService" name="service" class="form-select">
+                    <option value="ready-to-wear">Thử trang phục Bộ Sưu Tập</option>
+                    <option value="bespoke-suit">May đo Âu phục Bespoke (Suit/Blazer)</option>
+                    <option value="couture-gown">Đặt may Đầm Dạ Hội &amp; Nhung Lụa</option>
+                    <option value="wardrobe-consult">Tư vấn phong cách toàn diện</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="clientNote" class="form-label">Ghi chú hoặc yêu cầu đặc biệt</label>
+                <textarea id="clientNote" name="note" class="form-textarea" rows="3" placeholder="Sở thích về tone màu, số đo hoặc trang phục quý khách muốn thử trước..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-burgundy btn-block" id="btnSubmitAppointment">
+                Xác Nhận Lịch Hẹn Riêng
+              </button>
+              <p class="form-guarantee">Chuyên viên tư vấn sẽ liên hệ xác nhận trong vòng 30 phút làm việc.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.7 VIP NEWSLETTER / PRIVÉ CLUB (Section độc lập có H2 rõ ràng) -->
+    <section class="newsletter-section" aria-labelledby="newsletter-title">
+      <div class="container newsletter-container" data-aos="fade-up">
+        <div class="newsletter-text-wrap">
+          <span class="newsletter-tag">ÉPOQUE PRIVÉ</span>
+          <h2 id="newsletter-title" class="newsletter-title">Gia Nhập Câu Lạc Bộ Quý Khách VIP</h2>
+          <p class="newsletter-desc">
+            Nhận thư mời độc quyền tham dự các buổi diễn riêng tư, bản xem trước Lookbook từng mùa và đặc quyền may đo giới hạn.
+          </p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" novalidate aria-label="Đăng ký nhận bản tin câu lạc bộ Époque Privé">
+          <div class="newsletter-input-group">
+            <label for="newsletterEmail" class="sr-only">Địa chỉ thư điện tử</label>
+            <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="Nhập địa chỉ email của Quý khách..." required aria-required="true">
+            <button type="submit" class="btn btn-burgundy newsletter-submit">Gia Nhập</button>
+          </div>
+          <span class="field-error" id="newsletterError" aria-live="polite"></span>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 4. SITE FOOTER (Chân trang chứa landmark navigation và thông tin liên hệ address) -->
+  <footer class="site-footer" id="contact">
+    <!-- H2 ẩn cho Footer Landmark giúp hoàn thiện cây Accessibility -->
+    <h2 class="sr-only" id="footerHeading">Thông Tin Thương Hiệu &amp; Liên Hệ Chân Trang</h2>
+    <div class="container footer-main" aria-labelledby="footerHeading">
+      <!-- Col 1: Brand Info -->
+      <div class="footer-col footer-col-brand">
+        <a href="#hero" class="brand-logo footer-logo" aria-label="MAISON ÉPOQUE - Về đầu trang">
+          <span class="logo-name">MAISON ÉPOQUE</span>
+          <span class="logo-sub">PARIS &bull; SAÏGON</span>
+        </a>
+        <p class="footer-slogan">Elegance Never Fades</p>
+        <p class="footer-bio">
+          Biểu tượng của sự chuẩn mực trong thời trang Vintage và Classic Luxury. Nơi tôn vinh nét đẹp vĩnh cửu của phong thái đài các.
+        </p>
+        <div class="footer-socials" aria-label="Kênh truyền thông xã hội">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Theo dõi MAISON ÉPOQUE trên Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Khám phá bảng cảm hứng trên Pinterest">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="2" x2="12" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Trang Facebook chính thức">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Navigation Links chân trang -->
+      <nav class="footer-col" aria-label="Điều hướng liên kết chân trang">
+        <h3 class="footer-title">Khám Phá</h3>
+        <ul class="footer-links">
+          <li><a href="#hero">Trang Chủ</a></li>
+          <li><a href="#collections">Bộ Sưu Tập Di Sản</a></li>
+          <li><a href="#products">Sản Phẩm Tiêu Biểu</a></li>
+          <li><a href="#story">Lịch Sử &amp; Nghệ Nhân</a></li>
+          <li><a href="#philosophy">Tuyên Ngôn Nghệ Thuật</a></li>
+          <li><a href="#appointment">Đăng Ký May Đo Bespoke</a></li>
+        </ul>
+      </nav>
+
+      <!-- Col 3: Services & Concierge -->
+      <nav class="footer-col" aria-label="Dịch vụ may đo và tư vấn">
+        <h3 class="footer-title">Dịch Vụ Bespoke</h3>
+        <ul class="footer-links">
+          <li><a href="#appointment" data-service="bespoke-home">Dịch vụ may đo tại gia</a></li>
+          <li><a href="#appointment" data-service="care-fabric">Bảo dưỡng len dạ &amp; nhung lụa</a></li>
+          <li><a href="#appointment" data-service="couture-gown">Tư vấn phong cách Haute Couture</a></li>
+          <li><a href="#appointment" data-service="bespoke-suit">Chính sách bảo hành trọn đời</a></li>
+          <li><a href="#appointment" data-service="size-consult">Hướng dẫn chọn size chuẩn Pháp</a></li>
+        </ul>
+      </nav>
+
+      <!-- Col 4: Salon Contact -->
+      <div class="footer-col footer-col-contact">
+        <h3 class="footer-title">Hệ Thống Salon</h3>
+        <address class="footer-address">
+          <p class="address-item">
+            <strong>Hà Nội:</strong> 28 Phố Tràng Tiền, Hoàn Kiếm<br>
+            <span class="contact-sub">Tel: <a href="tel:02439886688" class="footer-contact-link">(024) 3988 6688</a></span>
+          </p>
+          <p class="address-item">
+            <strong>TP. Hồ Chí Minh:</strong> 14 Đồng Khởi, Quận 1<br>
+            <span class="contact-sub">Tel: <a href="tel:02838229988" class="footer-contact-link">(028) 3822 9988</a></span>
+          </p>
+          <p class="address-item">
+            <strong>Email đón tiếp:</strong> <a href="mailto:concierge@maison-epoque.com" class="footer-contact-link">concierge@maison-epoque.com</a>
+          </p>
+        </address>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright-text">
+          &copy; 2026 <strong>MAISON ÉPOQUE</strong>. Elegance Never Fades. Thiết kế dự án thi môn Thiết kế Web.
+        </p>
+        <p class="footer-credits">
+          Phát triển với HTML5, CSS3 Variables, Grid/Flexbox &amp; Pure JavaScript.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 5. PRODUCT DETAIL MODAL (Quick-View Dialog có aria-modal và thứ bậc H2 -> H3 chuẩn xác) -->
+  <div class="modal-backdrop" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Đóng cửa sổ chi tiết sản phẩm">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="modal-content-grid">
+        <div class="modal-media">
+          <img 
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='1067' viewBox='0 0 800 1067'%3E%3Crect fill='%23EFE7DC' width='100%25' height='100%25'/%3E%3C/svg%3E" 
+            alt="Hình ảnh chi tiết sản phẩm thời trang cao cấp MAISON ÉPOQUE" 
+            id="modalImage" 
+            class="modal-img"
+            width="800"
+            height="1067"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+        <div class="modal-info">
+          <span class="modal-category" id="modalCategory">DANH MỤC</span>
+          <h2 class="modal-title" id="modalTitle">Tên Sản Phẩm</h2>
+          <p class="modal-price" id="modalPrice">0 ₫</p>
+          <div class="modal-divider" aria-hidden="true"></div>
+
+          <div class="modal-desc" id="modalDesc">
+            Mô tả sản phẩm đang được tải...
+          </div>
+
+          <div class="modal-specs">
+            <!-- Đổi H4 sang H3 để không bị nhảy cóc thứ bậc heading sau H2 -->
+            <h3 class="specs-title">Đặc tính kỹ nghệ &amp; Chất liệu:</h3>
+            <ul class="specs-list" id="modalSpecsList">
+              <!-- Render động qua JavaScript -->
+            </ul>
+          </div>
+
+          <div class="modal-actions">
+            <button type="button" class="btn btn-burgundy modal-cta" id="modalBookBtn">Đặt Lịch Thử Thiết Kế Này</button>
+            <button type="button" class="btn btn-outline modal-secondary" id="modalDismissBtn">Tiếp Tục Xem</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- 7. BACK TO TOP BUTTON -->
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Cuộn trang trở về đầu">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
+
+  <!-- AOS JS CDN (Bắt buộc theo đề bài) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Custom JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
